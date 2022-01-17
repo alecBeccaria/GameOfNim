@@ -1,19 +1,19 @@
-const playerInfo1 = document.getElementById("player1");
-const playerInfo2 = document.getElementById("player2");
+var playerInfo1 = document.getElementById("player1");
+var playerInfo2 = document.getElementById("player2");
+var isBot = document.getElementById("isBot");
 
 function test() {
-    if (playerInfo1.value.trim() === "") {
-        localStorage.setItem("player1", "Player 1");
+    localStorage.setItem("player1", "Player 1");
+    localStorage.setItem("player2", playerInfo2.value);
+
+
+    if (isBot.value == "human") {
+        localStorage.setItem("isBot", "person");
     }
     else {
-        localStorage.setItem("player1", playerInfo1.value);
+        localStorage.setItem("isBot", "comp");
     }
 
-    if (playerInfo2.value.trim() === "") {
-        localStorage.setItem("player1", "Player 2");
-    }
-    else {
-        localStorage.setItem("player1", playerInfo2.value);
-    }
-    window.location.replace("./gameScript.html");
+    alert("AAAH!!!");
+    window.location.href = 'google.com'
 }
