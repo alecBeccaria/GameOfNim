@@ -9,14 +9,20 @@
     <script src='scripts/indexScript.js'></script>
 </head>
 <body>
-    
-
-    <!--Just a quick example showing how we can pull functions from our js file.-->
-    <button onclick="alertUser()">Hello!</button>
-    <form>
+    <form onsubmit="test()">
+        <label for="player1">Player 1 Username: </label>
         <input type="text" placeholder="Player 1 Name" name="player1" id="player1">
+        <br>
+        <label for="player2">Player 2 Username: </label>
         <input type="text" placeholder="Player 2 Name" name="player2" id="player2">
-        <input type="submit" value="Play Game!" onclick="select()">
+        <input type="radio" id="comp" name="isBot" value="HTML">
+            <label for="comp">Human</label>
+        <input type="radio" id="comp1" name="isBot" value="CSS">
+            <label for="comp1">Computer</label><br>
+        <br>
+        <input type="submit" value="Play Game!">
     </form>
+
+    <script src='scripts/indexScript.js'></script>
 </body>
 </html>
