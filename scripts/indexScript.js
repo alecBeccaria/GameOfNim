@@ -1,5 +1,5 @@
-const playerInfo1 = document.getElementById("player1");
-const playerInfo2 = document.getElementById("player2");
+var playerInfo1 = document.getElementById("player1");
+var playerInfo2 = document.getElementById("player2");
 
 function test() {
     if (playerInfo1.value.trim() === "") {
