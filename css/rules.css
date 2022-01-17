@@ -1,0 +1,32 @@
+:root{
+    --backgroundColor: #4ace76; 
+    --borderColor: #308d4f;
+}
+#rules{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid var(--borderColor);
+    padding: 10px;
+    background-color: var(--backgroundColor);
+}
+#header{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    padding-left: 3%;
+    padding-right: 3%;
+    transform: translate(-50%, -50%);
+    border: 5px solid var(--borderColor);
+    font-size:larger;
+    background-color: var(--backgroundColor);
+}
+.button{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    padding-left: 3%;
+    padding-right: 3%;
+    transform: translate(-50%, -50%);
+}
