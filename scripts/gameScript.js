@@ -2,9 +2,9 @@ var z, sp, next_to_that
 a = new int_array(4)
 image = new Array()
 image[1] = new Image()
-image[1].src = "empty1.gif"
+image[1].src = "assets/Stone2.png"
 image[2] = new Image()
-image[2].src = "matcho1.gif"
+image[2].src = "assets/Stone1.png"
 
 function one_way(row) {
     a[row]--
@@ -18,6 +18,7 @@ function player_draught(row) {
         if (a[1] + a[2] + a[3] + a[4] == 0)
             alert("Sorry... I won!");
     }
+    console.log("test");
 }
 
 function m_way(row) {
