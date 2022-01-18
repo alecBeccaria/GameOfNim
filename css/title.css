@@ -1,0 +1,22 @@
+:root{
+    --backgroundColor: #85ce4a; 
+    --bgHover: #609435;
+    --borderColor: #4d792a;
+}
+.menu{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    padding-left: 3%;
+    padding-right: 3%;
+    transform: translate(-50%, -50%);
+}
+.button{
+    padding: 5px 5px 5px 5px;
+    border: 5px solid var(--borderColor);
+    font-size:larger;
+    background-color: var(--backgroundColor);
+}
+.button:hover{
+    background-color: var(--bgHover);
+}
