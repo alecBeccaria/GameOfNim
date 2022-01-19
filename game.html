@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
-    
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/game.css" />
 </head>
 
@@ -59,17 +59,23 @@
             <td height="70" colspan="7"><input name="button2" type="button" class="button" onClick="new_game()"
                     value="New game">
                 &nbsp;
-                <input name="button2" type="button" class="button" onClick="javascript:window.close()"
-                    value="Close window">
             </td>
             <td height="70"><button name="button2" type="button" class="button2" onClick="endTurn()"
                     >End Turn</button>
             </td>
         </tr>
     </table>
-    <div id="curretPlayer"></div>
+    <div id="curretPlayer1">
+        <img SRC="assets/Stone2.png" id="playerRock1">
+        <h3>Player 1</h3>
+    </div>
+    <div id="curretPlayer2">
+        <img SRC="assets/Stone2.png" id="playerRock2">
+        <h3>Player 2</h3>
+    </div>
+    
 
-    <script src="scripts/gameScript.js"></script>
+    <script src="scripts/gameScript.js" ></script>
 </body>
 
 </html>

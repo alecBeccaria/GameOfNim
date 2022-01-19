@@ -7,6 +7,11 @@
     --stoneImage2: url('../assets/Stone2.png');
 }
 
+td {
+    width: 105px;
+    height: 105px;
+}
+
 body{
     background:         
         linear-gradient(
