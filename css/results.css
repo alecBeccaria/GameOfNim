@@ -1,0 +1,66 @@
+:root{
+    --backgroundColor: #85ce4a; 
+    --bgHover: #609435;
+    --borderColor: #4d792a;
+    --backgroundImage: url("../assets/Dirt_Texture.jpeg");
+    --stoneImage1: url('../assets/Stone1.png');
+    --stoneImage2: url('../assets/Stone2.png');
+}
+
+td {
+    width: 105px;
+    height: 105px;
+}
+
+body{
+    background:         
+        linear-gradient(
+            rgba(0, 0, 0, 0.4), 
+            rgba(0, 0, 0, 0.4)
+        ), 
+        var(--backgroundImage);
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.title{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    padding: 1% 1% 1% 1%;
+    background: var(--backgroundColor);
+    border: var(--borderColor) solid 0.1em
+}
+.menu{
+    display: flex;
+
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-46%, -50%);
+}
+.stone{
+    max-height: 17%;
+    max-width: 17%;
+}
+.button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 10px 100px 10px 100px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    border: 3px solid var(--borderColor);
+    font-size: larger;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    background-color: var(--backgroundColor);
+}
+
+.button:hover{
+    background-color: var(--bgHover);
+}
