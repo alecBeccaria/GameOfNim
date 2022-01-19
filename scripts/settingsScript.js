@@ -1,6 +1,6 @@
 var playerInfo1 = document.getElementById("player1");
 var playerInfo2 = document.getElementById("player2");
-var difficulty = document.getElementById("difficulty");
+var ele = document.getElementsByName('difficulty');
 
 function test(e) {
     e.preventDefault();
@@ -16,7 +16,10 @@ function test(e) {
         localStorage.setItem("player2", "Player 2")
     }
 
-    localStorage.setItem("mode", difficulty.value);
+    for(i = 0; i < ele.length; i++) {
+        if(ele[i].checked)
+        localStorage.setItem("mode", ele[i].value);
+    }
 
     alert("Settings Saved.");
     window.location.href = "./game.html";
