@@ -4,6 +4,8 @@ const row3Btn = document.getElementById("row3");
 const row4Btn = document.getElementById("row4");
 const playerTurn1 = document.getElementById("playerRock1");
 const playerTurn2 = document.getElementById("playerRock2");
+const player1Name = document.getElementById("player1Name");
+const player2Name = document.getElementById("player2Name");
 
 
 var chosenRow = 0;
@@ -16,6 +18,9 @@ var stoneCount = 16;
 //Table
 var table = document.getElementById("nimGame");
 playerTurn2.style.visibility = "hidden";
+
+player1Name.innerHTML = localStorage.getItem("player1"); 
+player2Name.innerHTML = localStorage.getItem("player2"); 
 
 
 const endTurn = () => {
@@ -31,11 +36,11 @@ const endTurn = () => {
     if(stoneCount == 0){
         if(playerTurn % 2 == 0){
             console.log("Player 1 wins");
-            localStorage.setItem("winner", "1");
+            localStorage.setItem("winner", localStorage.getItem("player1"));
             window.location.href = "./results.html";
         }else{
             console.log("Player 2 wins");
-            localStorage.setItem("winner", "2");
+            localStorage.setItem("winner", localStorage.getItem("player2"));
             window.location.href = "./results.html";
         }
         console.log("ended");
