@@ -6,72 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
-    <script src="scripts/gameScript.js"></script>
-    <link rel="stylesheet" href="css/game.css"/>
+    
+    <link rel="stylesheet" href="css/game.css" />
 </head>
 
 <body>
-    <form>
-        <table BORDER=0 cellpadding="1" cellspacing="1" id="nimGame">
-            <tr align="center" valign="top">
-                <td COLSPAN="3"></td>
-                <td width="32"><img SRC="assets/Stone1.png"></td>
-                <td COLSPAN="3"></td>
-                <td width="59" valign="middle"><input id="row1" type="button" class="button"
-                        onClick="removeStone(1)" value="Row 1">
-                </td>
-            </tr>
-            <tr align="center" valign="top">
-                <td COLSPAN="2"></td>
-                <td width="32"><img SRC="assets/Stone1.png"></td>
-                <td width="32"><img SRC="assets/Stone1.png"></td>
-                <td width="32"><img SRC="assets/Stone1.png"></td>
-                <td COLSPAN="2"></td>
-                <td width="59" valign="middle"><input id="row2" type="button" class="button"
-                        onClick="removeStone(2)" value="Row 2">
-                </td>
-            </tr>
-            <tr align="center" valign="top">
-                <td width="32"></td>
-                <td width="32"><img SRC="assets/Stone1.png"></td>
-                <td width="32"><img SRC="assets/Stone1.png"></td>
-                <td width="32"><img SRC="assets/Stone1.png"></td>
-                <td width="32"><img SRC="assets/Stone1.png"></td>
-                <td width="32"><img SRC="assets/Stone1.png"></td>
-                <td width="32"></td>
-                <td width="59" valign="middle"><input id="row3" type="button" class="button"
-                        onClick="removeStone(3)" value="Row 3">
-                </td>
-            </tr>
-            <tr align="center" valign="top">
-                <td WIDTH="32"><img SRC="assets/Stone1.png"></td>
-                <td WIDTH="32"><img SRC="assets/Stone1.png"></td>
-                <td WIDTH="32"><img SRC="assets/Stone1.png"></td>
-                <td WIDTH="32"><img SRC="assets/Stone1.png"></td>
-                <td WIDTH="32"><img SRC="assets/Stone1.png"></td>
-                <td WIDTH="32"><img SRC="assets/Stone1.png"></td>
-                <td WIDTH="32"><img SRC="assets/Stone1.png"></td>
-                <td WIDTH="59" valign="middle"><input id="row4" type="button" class="button"
-                        onClick="removeStone(4)" value="Row 4">
-                </td>
-            </tr>
-            <tr align="center" valign="middle">
-                <td height="70" colspan="7"><input name="button2" type="button" class="button"
-                        onClick="new_game()" value="New game">
-                    &nbsp;
-                    <input name="button2" type="button" class="button"
-                        onClick="javascript:window.close()"
-                        value="Close window">
-                </td>
-                <td height="70"><input name="button2" type="button" class="button2"
-                        onClick="computer_draught()" value="PC move">
-                </td>
-            </tr>
-        </table>
-    </form>
-    <script LANGUAGE="JavaScript" type="fa4f5c1b049826e653a073f9-text/javascript"><!--
-        randomize()
-      //--></script>
+
+    <table BORDER=0 cellpadding="1" cellspacing="1" id="nimGame">
+        <tr align="center" valign="top">
+            <td COLSPAN="3"></td>
+            <td width="32"><img SRC="assets/Stone1.png" id="imgA1"></td>
+            <td COLSPAN="3"></td>
+            <td width="59" valign="middle"><button id="row1" type="button" class="button" onClick="removeStone(1)"
+                    value="Row 1">Row 1</button>
+            </td>
+        </tr>
+        <tr align="center" valign="top">
+            <td COLSPAN="2"></td>
+            <td width="32"><img SRC="assets/Stone1.png" id="imgB1"></td>
+            <td width="32"><img SRC="assets/Stone1.png" id="imgB2"></td>
+            <td width="32"><img SRC="assets/Stone1.png" id="imgB3"></td>
+            <td COLSPAN="2"></td>
+            <td width="59" valign="middle"><button id="row2" type="button" class="button" onClick="removeStone(2)"
+                    value="Row 2">Row 2</button>
+            </td>
+        </tr>
+        <tr align="center" valign="top">
+            <td width="32"></td>
+            <td width="32"><img SRC="assets/Stone1.png" id="imgC1"></td>
+            <td width="32"><img SRC="assets/Stone1.png" id="imgC2"></td>
+            <td width="32"><img SRC="assets/Stone1.png" id="imgC3"></td>
+            <td width="32"><img SRC="assets/Stone1.png" id="imgC4"></td>
+            <td width="32"><img SRC="assets/Stone1.png" id="imgC5"></td>
+            <td width="32"></td>
+            <td width="59" valign="middle"><button id="row3" type="button" class="button" onClick="removeStone(3)"
+                    value="Row 3">Row 3</button>
+            </td>
+        </tr>
+        <tr align="center" valign="top">
+            <td WIDTH="32"><img SRC="assets/Stone1.png" id="imgD1"></td>
+            <td WIDTH="32"><img SRC="assets/Stone1.png" id="imgD2"></td>
+            <td WIDTH="32"><img SRC="assets/Stone1.png" id="imgD3"></td>
+            <td WIDTH="32"><img SRC="assets/Stone1.png" id="imgD4"></td>
+            <td WIDTH="32"><img SRC="assets/Stone1.png" id="imgD5"></td>
+            <td WIDTH="32"><img SRC="assets/Stone1.png" id="imgD6"></td>
+            <td WIDTH="32"><img SRC="assets/Stone1.png" id="imgD7"></td>
+            <td WIDTH="59" valign="middle"><button id="row4" type="button" class="button" onClick="removeStone(4)"
+                    value="Row 4">Row 4</button>
+            </td>
+        </tr>
+        <tr align="center" valign="middle">
+            <td height="70" colspan="7"><input name="button2" type="button" class="button" onClick="new_game()"
+                    value="New game">
+                &nbsp;
+                <input name="button2" type="button" class="button" onClick="javascript:window.close()"
+                    value="Close window">
+            </td>
+            <td height="70"><button name="button2" type="button" class="button2" onClick="endTurn()"
+                    >End Turn</button>
+            </td>
+        </tr>
+    </table>
+    <div id="curretPlayer"></div>
+
+    <script src="scripts/gameScript.js"></script>
 </body>
 
 </html>
