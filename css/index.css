@@ -5,4 +5,6 @@ body{
         rgba(0, 0, 0, 0.4)
     ), 
     url('../assets/Dirt_Texture.jpeg');
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
 }

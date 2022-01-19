@@ -19,5 +19,5 @@ function test(e) {
     localStorage.setItem("mode", difficulty.value);
 
     alert("Settings Saved.");
-    window.location.href = "index.html";
+    window.location.href = "./game.html";
 }
