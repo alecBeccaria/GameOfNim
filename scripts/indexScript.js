@@ -5,8 +5,8 @@ function button() {
 
 }
 newGame.addEventListener("click", e=>{
-    location.href = "/settings.html";
+    location.href = "./settings.html";
 })
 rules.addEventListener("click", e=>{
-    location.href = "/rules.html";
+    location.href = "./rules.html";
 })
