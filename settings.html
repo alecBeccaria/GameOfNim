@@ -6,29 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
     <script src='scripts/settingsScript.js'></script>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/settings.css"/>
 </head>
 <body>
-    <form onsubmit="test(event)" style="width: 100%; text-align: center;">
-        <h1>Settings</h1>
+    <h1 class="title">Settings</h1>
+    <form onsubmit="test(event)">
         <hr>
-        <label for="player1">Player 1 Username: </label>
-        <input type="text" placeholder="Player 1 Name" name="player1" id="player1">
-        <br>
-        <label for="player2">Player 2 Username: </label>
-        <input type="text" placeholder="Player 2 Name" name="player2" id="player2">
-        <br>
-        <h4>Difficulty</h4>
-        <input type="radio" id="easy" name="difficulty" value="easy">
-        <label for="easy">Easy</label>
-        <input type="radio" id="medium" name="difficulty" value="medium">
-        <label for="medium">Medium</label>
-        <input type="radio" id="hard" name="difficulty" value="hard">
-        <label for="hard">Hard</label>
-        <br>
-        <br>
-        <br>
-        <input type="submit" value="Play Game!">
+        <div class="menu">
+            <br>
+            <div class="difficulty">
+                <h4>Difficulty</h4>
+                <div class="diffItem">
+                    <img src="assets/Stone1.png" class="stone">
+                    <input type="radio" id="easy" name="difficulty" value="easy">
+                    <label for="easy">Easy</label>
+                </div>
+                <div class="diffItem">
+                    <img src="assets/Stone2.png" class="stone">
+                    <input type="radio" id="medium" name="difficulty" value="medium">
+                    <label for="medium">Medium</label>
+                </div>
+                <div class="diffItem">
+                    <img src="assets/Stone3.png" class="stone">
+                    <input type="radio" id="hard" name="difficulty" value="hard">
+                    <label for="hard">Hard</label>
+                </div>
+            </div>
+            <div class="playerNameMenu">
+                <div class="playerNameBox">
+                    <label class="playerNameLabel" for="player1">Player 1 Username: </label>
+                    <input class="playerNameEntry" type="text" name="player1" id="player1">
+                </div>
+                <div class="playerNameBox">
+                    <label class="playerNameLabel" for="player2">Player 2 Username: </label>
+                    <input class="playerNameEntry" type="text" name="player2" id="player2">
+                </div>
+            </div>
+            <input class="button" type="submit" value="Play Game!">
+        </div>
     </form>
 
     <script src="scripts/settingsScript.js"></script>
