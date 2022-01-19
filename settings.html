@@ -9,15 +9,20 @@
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-    <form onsubmit="test(event)">
+    <form onsubmit="test(event)" style="width: 100%; text-align: center;">
+        <h1>Settings</h1>
+        <hr>
         <label for="player1">Player 1 Username: </label>
         <input type="text" placeholder="Player 1 Name" name="player1" id="player1">
         <br>
         <label for="player2">Player 2 Username: </label>
         <input type="text" placeholder="Player 2 Name" name="player2" id="player2">
-        <select id="isBot" name="isBot">
-            <option value="human">Human Player</option>
-            <option value="comp">Computer Player</option>
+        <br>
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty" name="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
         </select>
         <br>
         <input type="submit" value="Play Game!">
