@@ -6,22 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/game.css" />
 </head>
 
 <body>
+    <div class="title">The Game of Nim</div>
+    <div class="playerNames">
+        <div id="curretPlayer1">
+            <img SRC="assets/Stone2.png" id="playerRock1">
+            <h3 class="playerText" id="player1Name">Player 1</h3>
+        </div>
+        <div id="curretPlayer2">
+            <img SRC="assets/Stone2.png" id="playerRock2">
+            <h3 class="playerText" id="player2Name">Player 2</h3>
+        </div>
+    </div>
     <table BORDER=0 cellpadding="1" cellspacing="1" id="nimGame">
         
     </table>
-    <div id="curretPlayer1">
-        <img SRC="assets/Stone2.png" id="playerRock1">
-        <h3 id="player1Name">Player 1</h3>
-    </div>
-    <div id="curretPlayer2">
-        <img SRC="assets/Stone2.png" id="playerRock2">
-        <h3 id="player2Name">Player 2</h3>
-    </div>
     
 
     <script src="scripts/gameScript.js" ></script>
