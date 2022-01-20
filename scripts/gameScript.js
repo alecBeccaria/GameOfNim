@@ -17,6 +17,7 @@ var stoneCount = 16;
 console.log(difficulty);
 
 if (difficulty === "easy") {
+    stoneCount = 9;
     nimGame.innerHTML = `<table BORDER=0 cellpadding="1" cellspacing="1" id="nimGame">
     <tr align="center" valign="top">
         <td COLSPAN="3"></td>
@@ -58,6 +59,7 @@ if (difficulty === "easy") {
     </tr>
 </table>`;
 } else if (difficulty === "medium") {
+    stoneCount = 16;
     nimGame.innerHTML = `<table BORDER=0 cellpadding="1" cellspacing="1" id="nimGame">
     <tr align="center" valign="top">
         <td COLSPAN="3"></td>
@@ -111,6 +113,7 @@ if (difficulty === "easy") {
     </tr>
 </table>`;
 } else {
+    stoneCount = 25;
     nimGame.innerHTML = `<table BORDER=0 cellpadding="1" cellspacing="1" id="nimGame">
         <tr align="center" valign="top">
             <td COLSPAN="4"></td>
