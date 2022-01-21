@@ -19,36 +19,47 @@ body{
             rgba(0, 0, 0, 0.4)
         ), 
         var(--backgroundImage);
-    
     font-family:Arial, Helvetica, sans-serif;
     color: aliceblue;
 }
+
 .title{
-    align-self: center;
-    text-align: center;
-    font-size: 50px;
-}
-.menu{
     position: absolute;
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
+    padding: 1% 1% 1% 1%;
+    background: var(--backgroundColor);
+    border: var(--borderColor) solid 0.1em;
+    min-width: 20%;
+    text-align: center;
 }
-.menuItem{
-    margin-top: 5%;
+.menu{
     display: flex;
-    flex-direction: row;
+
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-46%, -50%);
 }
 .stone{
-    max-height: 20%;
-    max-width: 20%;
+    max-height: 17%;
+    max-width: 17%;
 }
 .button{
-    flex-grow: 1;
-    padding: 5% 10% 5% 10%;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 10px 100px 10px 100px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
     border: 3px solid var(--borderColor);
     font-size: larger;
     text-align: center;
+    align-content: center;
+    align-self: center;
     background-color: var(--backgroundColor);
 }
 
