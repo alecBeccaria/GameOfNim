@@ -29,7 +29,9 @@
     position: absolute;
     left: 50%;
     top: 60%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
     transform: translate(-50%, -50%);
 }
